@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Chain Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="skull-icon">☠️</span> Pirate Chain Converter <span class="skull-icon">☠️</span></h1>
+            <p>Convert yer ARRR treasures to landlubber currencies!</p>
+        
+        </div>
+        
+        <div class="converter">
+            <div class="input-group">
+                <label for="arrr-amount" id="amount-label">Enter ARRR Amount:</label>
+                <input type="number" id="arrr-amount" value="1" step="0.01" min="0" placeholder="How many ARRR ye be havin'?">
+            </div>
+            
+            <button id="convert-btn">Convert Me Booty!</button>
+            
+            <div class="results" id="results">
+                <div class="result-item">
+                    <span class="currency">BTC:</span>
+                    <div class="value-container">
+                        <span class="value" id="btc-value">0.0000037</span>
+                        <button class="swap-btn" id="swap-btc" title="Swap to BTC conversion">⇄</button>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <span class="currency">USD:</span>
+                    <div class="value-container">
+                        <span class="value" id="usd-value">$0.54</span>
+                        <button class="swap-btn" id="swap-usd" title="Swap to USD conversion">⇄</button>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <span class="currency">EUR:</span>
+                    <div class="value-container">
+                        <span class="value" id="eur-value">€0.49</span>
+                        <button class="swap-btn" id="swap-eur" title="Swap to EUR conversion">⇄</button>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <span class="currency">VRSC:</span>
+                    <div class="value-container">
+                        <span class="value" id="vrsc-value">0.8900</span>
+                        <button class="swap-btn" id="swap-vrsc" title="Swap to VRSC conversion">⇄</button>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <span class="currency">KMD:</span>
+                    <div class="value-container">
+                        <span class="value" id="kmd-value">0.7500</span>
+                        <button class="swap-btn" id="swap-kmd" title="Swap to KMD conversion">⇄</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="theme-selector">
+            <label for="theme-select">Choose yer map style, matey:</label>
+            <div style="margin-top: 10px;">
+                <select id="theme-select" class="theme-select">
+                    <option value="pirate-ocean">🌊 Pirate Ocean</option>
+                    <option value="dark-treasure">💰 Dark Treasure</option>
+                    <option value="tropical">🏝️ Tropical Island</option>
+                    <option value="royal-navy">⚓ Royal Navy</option>
+                    <option value="ghost-ship">👻 Ghost Ship</option>
+                    <option value="caribbean-pirate">🏴‍☠️ Caribbean Pirate</option>
+                    <option value="white-sail">⛵ White Sail Pirate</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Market Data Section -->
+        <div class="market-data">
+            <h3 class="market-title">Market Data</h3>
+            <div class="market-info">
+                <div class="market-item">
+                    <span>Last Updated:</span>
+                    <span id="last-updated">May 11, 2025</span>
+                </div>
+                <div class="market-item">
+                    <span>24h Volume:</span>
+                    <span>$432,875</span>
+                </div>
+                <div class="market-item">
+                    <span>Market Cap:</span>
+                    <span>$99,347,890</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Simple embed section -->
+        <div class="embed-section">
+            <h3 class="embed-title">Embed On Your Website</h3>
+            <p>Copy this code to embed the converter on your website:</p>
+            <textarea class="embed-code" readonly><iframe src="https://yourwebsite.com/pirate-chain-converter.html" width="100%" height="650px" style="border:none;max-width:800px;" frameborder="0"></iframe></textarea>
+        </div>
+    </div>
+    
+    <footer>
+        <p>⚓ Crafted with rum and code by pirate developers! ⚓</p>
+        <p class="version-info">Version 1.0 - Last updated: May 2025</p>
+    </footer>
+    
+    <!-- Toast for notifications -->
+    <div id="toast"></div>
+    
+    <!-- Lucky 777 Animation -->
+    <div id="lucky-animation">
+        <div class="lucky-content">
+            <div class="lucky-title">LUCKY 777 ARRR!</div>
+            <div class="treasure-chest" id="treasure-chest"></div>
+            <p class="lucky-text">Ye found the lucky pirate treasure!</p>
+            <button class="close-btn" id="close-animation">Continue</button>
+        </div>
+    </div>
+
+    <!-- Zero Error Animation -->
+<div id="zero-error-animation">
+    <div class="error-content">
+        <div class="skull-crossbones">☠️</div>
+        <div class="error-title">AVAST YE! EMPTY TREASURE!</div>
+        <div class="pirate-ship">
+            <div class="ship-body"></div>
+            <div class="ship-sail"></div>
+            <div class="skull-mark">☠</div>
+            <div class="ship-flag"></div>
+            <div class="wave"></div>
+        </div>
+        <p style="color:white; font-size:1.2rem; margin-bottom:20px;">Even pirates don't trade with empty chests! Enter some booty, ye scallywag!</p>
+        <button class="close-btn" id="close-zero-animation">Aye Aye Captain!</button>
+    </div>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
