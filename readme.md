@@ -4,7 +4,7 @@
 
 A responsive, interactive cryptocurrency converter specializing in Pirate Chain (ARRR) conversions. This tool allows users to convert ARRR to various cryptocurrencies and fiat currencies with a pirate-themed interface and multiple visual themes.
 
-![Pirate Chain Converter Preview](./assets/preview.png)
+![Pirate Chain Converter Preview](./assets/preview.gif)
 
 ## 🌟 Features
 
