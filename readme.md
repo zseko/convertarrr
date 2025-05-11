@@ -1,6 +1,5 @@
 # 🏴‍☠️ Pirate Chain Converter
 
-![Version](https://img.shields.io/badge/version-10.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 A responsive, interactive cryptocurrency converter specializing in Pirate Chain (ARRR) conversions. This tool allows users to convert ARRR to various cryptocurrencies and fiat currencies with a pirate-themed interface and multiple visual themes.
@@ -33,7 +32,7 @@ A responsive, interactive cryptocurrency converter specializing in Pirate Chain 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/pirate-chain-converter.git
+   git clone https://github.com/zseko/pirate-chain-converter.git
    cd pirate-chain-converter
    ```
 
