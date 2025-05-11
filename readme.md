@@ -13,6 +13,7 @@ A responsive, interactive cryptocurrency converter specializing in Pirate Chain 
 - **Pirate-themed UI**: Seven different visual themes
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 - **Lucky 777 Easter Egg**: Special animation when converting 777 ARRR
+- **Easter Egg 0**: Special animation when converting 0 ARRR
 - **Embedding Support**: Add the converter to your own website
 - **Theme Persistence**: Saves user's theme preference
 - **Market Data Display**: Shows latest market statistics
